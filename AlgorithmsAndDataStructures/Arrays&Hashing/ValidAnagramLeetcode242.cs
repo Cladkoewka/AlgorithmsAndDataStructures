@@ -10,33 +10,25 @@ namespace AlgorithmsAndDataStructures.Arrays_Hashing
     {
         public static bool IsAnagram(string s, string t)
         {
-            Dictionary<char, int> dictionary = new Dictionary<char, int>();
+            if (s.Length != t.Length)
+                return false;
 
-            foreach(char c in s)
+            int[] arr = new int[26];
+
+            foreach (char c in s)
             {
-                if (!dictionary.ContainsKey(c))
-                    dictionary[c] = 0;
-                
-
-                dictionary[c]++;
+                arr[c - 'a']++;
             }
-
             foreach (char c in t)
             {
-                if (!dictionary.ContainsKey(c))
-                    dictionary[c] = 0;
-
-                dictionary[c]--;
-            }
-
-
-            foreach(var pair in dictionary)
-            {
-                if (pair.Value != 0)
+                if (arr[c - 'a'] > 0)
+                    arr[c - 'a']--;
+                else
                     return false;
             }
 
             return true;
+
 
         }
 
