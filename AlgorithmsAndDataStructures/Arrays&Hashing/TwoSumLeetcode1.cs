@@ -10,26 +10,28 @@ namespace AlgorithmsAndDataStructures.Arrays_Hashing
     {
         public static int[] TwoSum(int[] nums, int target)
         {
-            int[] ans = new int[2];
-            for (int i = 0; i < nums.Length - 1; i++)
-            {
-                for (int j = i + 1; j < nums.Length; j++)
-                {
-                    if (nums[i] + nums[j] == target)
-                    {
-                        ans[0] = i;
-                        ans[1] = j;
-                        return ans;
-                    }
-                }
+            Dictionary<int, int> dict = new Dictionary<int, int>();
+            for (int i = 0; i < nums.Length; i++)
+            { 
+                int diff = target - nums[i];
+                if(dict.ContainsKey(diff))
+                    return new int[] { dict[diff], i};
+
+                if (!dict.ContainsKey(nums[i]))
+                    dict.Add(nums[i], i);
             }
 
-            return ans;
-
+            return null;
         }
 
         public static void Test()
         {
+            int[] nums10 = { 2, 7, 4, 11, 15, 3 };
+            int target10 = 19;
+
+            Console.WriteLine(TwoSum(nums10, target10).ArrayToString());
+
+
             int[] nums1 = { 2, 7, 11, 15 };
             int target1 = 9;
 
