@@ -4,7 +4,7 @@ public class Program
 {
     public static void Main()
     {
-        TwoSumLeetcode1.Test();
+        ValidAnagramLeetcode242.Test();
     }
 
 }
