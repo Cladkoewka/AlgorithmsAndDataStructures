@@ -1,0 +1,41 @@
+[33mcommit dcce9ddcf271a2ae446c684a4b49b27d97106745[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Cladkoewka <codewarriorms@gmail.com>
+Date:   Sun Apr 21 10:40:48 2024 +0300
+
+    Valid Parentheses Leetcode 20
+
+[33mcommit 05a4212aef3ff87970ae1ba4c5b57cd1950ff349[m
+Author: Cladkoewka <codewarriorms@gmail.com>
+Date:   Sat Apr 20 13:43:53 2024 +0300
+
+    faster solution
+
+[33mcommit 38c1d6c92cc7d4dd70752bf09a80e1c62972bc23[m
+Author: Cladkoewka <codewarriorms@gmail.com>
+Date:   Sat Apr 20 13:17:57 2024 +0300
+
+    Two Sum Leetcode 1
+
+[33mcommit ec57b9368dd54047f043a2f1dc181353ac5c08a9[m
+Author: Cladkoewka <codewarriorms@gmail.com>
+Date:   Fri Apr 19 22:03:51 2024 +0300
+
+    Valid Anagram Leetcode 242 Faster Solution
+
+[33mcommit 2978bf62b377c3ac10cf6232b3c7e2732c661da7[m
+Author: Cladkoewka <codewarriorms@gmail.com>
+Date:   Fri Apr 19 21:52:47 2024 +0300
+
+    Valid Anagrams Leetcode 242
+
+[33mcommit c6d14668b057a9b329ece9ddbcf70c95fd60ef4a[m
+Author: Cladkoewka <codewarriorms@gmail.com>
+Date:   Fri Apr 19 21:34:25 2024 +0300
+
+    Add project files.
+
+[33mcommit 7f1655389768f2883558f9591e397af9fbec5c8d[m
+Author: Cladkoewka <codewarriorms@gmail.com>
+Date:   Fri Apr 19 21:34:22 2024 +0300
+
+    Add .gitattributes, .gitignore, and README.md.
