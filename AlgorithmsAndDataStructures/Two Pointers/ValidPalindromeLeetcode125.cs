@@ -11,24 +11,26 @@ namespace AlgorithmsAndDataStructures.Two_Pointers
     {
         public static bool IsPalindrome(string s)
         {
-            string cleanedString = new string(s.Where(c => char.IsLetterOrDigit(c)).ToArray());
-
-
-            if (cleanedString.Length == 0 ) 
-                return true;
-
-            cleanedString = cleanedString.ToLower();
-
-            for (int i = 0; i < cleanedString.Length; i++)
+            for (int i = 0, j = s.Length - 1; j > i; )
             {
-                int j = cleanedString.Length - i -1;
+                if (!char.IsLetterOrDigit(s[i]))
+                {
+                    i++;
+                    continue;
+                }
 
-                if (cleanedString[i] != cleanedString[j])
+                if (!char.IsLetterOrDigit(s[j]))
+                {
+                    j--;
+                    continue;
+                }
+
+                if (char.ToLower(s[i++]) != char.ToLower(s[j--]))
                     return false;
+                
             }
 
             return true;
-
         }
 
         public static void Test()
