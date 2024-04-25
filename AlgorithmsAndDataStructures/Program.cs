@@ -1,11 +1,12 @@
 ﻿using AlgorithmsAndDataStructures.Arrays_Hashing;
+using AlgorithmsAndDataStructures.BinarySearch;
 using AlgorithmsAndDataStructures.Two_Pointers;
 
 public class Program
 {
     public static void Main()
     {
-        ValidPalindromeLeetcode125.Test();
+        BinarySearchLeetcode704.Test();
     }
 
 }
